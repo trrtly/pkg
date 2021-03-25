@@ -16,7 +16,7 @@ func NewCodeError(code int, msg string) error {
 	return &CodeError{Code: code, Msg: msg}
 }
 
-func NewDefaultError(msg string) error {
+func New(msg string) error {
 	return NewCodeError(defaultCode, msg)
 }
 
